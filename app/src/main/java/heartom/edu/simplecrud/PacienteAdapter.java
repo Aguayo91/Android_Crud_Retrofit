@@ -8,9 +8,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by Tomas on 13/06/2017.
- */
 
 public class PacienteAdapter extends RecyclerView.Adapter<PacienteAdapter.PacienteViewHolder> {
 
@@ -30,6 +27,11 @@ public class PacienteAdapter extends RecyclerView.Adapter<PacienteAdapter.Pacien
     @Override
     public void onBindViewHolder(PacienteViewHolder holder, int position) {
         holder.bindPaciente(lista.get(position));
+    }
+
+    public void addPaciente(Paciente paciente){
+        lista.add(paciente);
+        notifyDataSetChanged();
     }
 
     @Override
