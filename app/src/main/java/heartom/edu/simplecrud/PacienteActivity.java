@@ -70,7 +70,7 @@ public class PacienteActivity extends AppCompatActivity implements PacienteDialo
         fabAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mostrarDialogo();;
+                mostrarDialogo();
             }
         });
 
